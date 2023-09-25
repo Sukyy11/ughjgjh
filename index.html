@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radijatori</title>
+    <style>
+        /* Dodajte svoj CSS stil ovdje */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #D2E0FB;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #F9F3CC;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #D7E5CA;
+        }
+    </style>
+</head>
+<body style="background-color: #9EDDFF">
+
+
+    <header>
+        <h1>Radijatori</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#pocetna">Početna</a></li>
+            <li><a href="#vrste radijatora">Vrste radijatora</a></li>
+            <li><a href="#tabela">Tabela</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Slike radijatora</h2>
+            <img src="data:image/jpeg;base64,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" alt="Radijator 1">
+            <img src="data:image/jpeg;base64,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" alt="Radijator 2">
+        </section>
+        <section>
+            <h2 id="pocetna">O radijatorima</h2>
+            <p>Radijatori su efikasni uređaji za zagrijavanje prostora. Oni koriste konvekciju i zračenje kako bi osigurali ugodnu temperaturu u vašem domu ili poslovnom prostoru.</p>
+            <p>Postoje različite vrste radijatora, uključujući klasične čelične radijatore, aluminijumske radijatore i radijatore od lijevanog željeza.</p>
+            <p>Naša kompanija nudi širok izbor radijatora visokog kvaliteta po konkurentnim cenama.</p>
+            <p>Za više informacija o našim proizvodima i uslugama, obratite se našem timu putem kontakt forme ili telefonom.</p>
+            <p>Radujemo se što ćemo vam pomoći da pronađete savršeno rješenje za zagrijavanje vašeg prostora.</p>
+            
+             <h2 id="vrste radijatora">Vrste radijatora</h2>
+            <p>Konvektorski Radijatori: Konvektorski radijatori su najčešći tipovi radijatora i funkcionišu tako da zagrevaju vazduh oko sebe. Topao vazduh se podiže, stvara konvekciju i ravnomerno zagreva prostoriju.
+
+<p>Panelni Radijatori: Panelni radijatori su moderni i tanki radijatori koji brzo zagrevaju prostoriju. Obično se montiraju na zidove i imaju ravne panele.</p>
+
+<p>Liveni Radijatori: Liveni radijatori su klasični i teški radijatori napravljeni od livenog gvožđa. Oni zadržavaju toplotu i emituju je i nakon gašenja grejanja.</p>
+
+<p>Radijatori na Gorivo: Ovi radijatori koriste različite izvore goriva, kao što su gas ili lož-ulje, za proizvodnju toplote. Oni su nezavisni od električne energije.</p>
+
+<p>Radijatori sa Ventilatorom: Radijatori sa ugrađenim ventilatorom brže raspoređuju toplotu pomoću ventilatora. Ovo je efikasan način za brzo zagrevanje prostora.</p>
+            <p>Radijatori sa Električnim Grejačima: Ovi radijatori koriste električne grejače za zagrevanje. Oni su jednostavni za instalaciju i kontrolu temperature.</p>
+
+<p>Radijatori sa Termosifonskim Sistemom: Ovi radijatori koriste princip termosifona gde topla voda iz kotla prirodno cirkuliše kroz radijatore.</p>
+
+<p>Radijatori na Drva i Peleti: Koriste drvo ili pelete kao gorivo za proizvodnju toplote. Ovi radijatori su ekološki prihvatljiviji.</p>
+
+<p>Radijatori sa Infracrvenim Grejačima: Infracrveni radijatori koriste infracrvene zrake za direktno zagrevanje objekata i ljudi u prostoriji.</p>
+
+<p>Radijatori za Kupatila: Ovi radijatori su često kombinovani sa toplim peškirima i koriste se za grejanje kupatila i sušenje peškira.</p>
+            
+        </section>
+        <section>
+            <h2 id="tabela">Tabela sa specifikacijama</h2>
+            <table>
+                <tr>
+                    <th>Model</th>
+                    <th>Materijal</th>
+                    <th>Dimenzije</th>
+                    <th>Cijena</th>
+                </tr>
+                <tr>
+                    <td>Radijator za toalet</td>
+                    <td>Čelik</td>
+                    <td>80cm x 60cm</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>Radijator na gorivo</td>
+                    <td>Aluminijum</td>
+                    <td>100cm x 70cm</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td>Konvektorski radijatori</td>
+                    <td>Lijevano željezo</td>
+                    <td>90cm x 75cm</td>
+                    <td>$300</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
